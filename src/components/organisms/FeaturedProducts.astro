@@ -1,8 +1,8 @@
 ---
 import Button from "../../components/atoms/Button.astro";
-import headphone from "../../../public/assets/exported/headphone.png";
-import earphone from "../../../public/assets/exported/earphone.png";
-import speaker from "../../../public/assets/exported/speaker.png";
+import shirt from "../../../public/assets/shirt.png";
+import hoodie from "../../../public/assets/hoodie.png";
+import woman from "../../../public/assets/woman.png";
 import FeaturedProductCard from "../molecules/FeaturedProductCard.astro";
 ---
 
@@ -10,24 +10,25 @@ import FeaturedProductCard from "../molecules/FeaturedProductCard.astro";
   class="container flex flex-wrap justify-center xl:justify-between gap-8 featured-products-section"
 >
   <FeaturedProductCard
-    image={headphone}
-    imageAlt="headphone"
-    title="HEADPHONES"
+    image={shirt}
+    imageAlt="men"
+    title="MEN"
   >
-    <a href="/headphones"><Button>Shop</Button></a>
+    <a href="/"><Button>Shop</Button></a>
   </FeaturedProductCard>
 
-  <FeaturedProductCard image={speaker} imageAlt="speakers" title="SPEAKERS">
-    <a href="/speakers"><Button>Shop</Button></a>
+  <FeaturedProductCard image={hoodie} 
+  imageAlt="kids" title="KIDS">
+    <a href="/"><Button>Shop</Button></a>
   </FeaturedProductCard>
 
   <FeaturedProductCard
-    width="160px"
-    image={earphone}
-    imageAlt="earphone"
-    title="EARPHONES"
+    width="120px"
+    image={woman}
+    imageAlt="woman"
+    title="WOMEN"
   >
-    <a href="/earphones"><Button>Shop</Button></a>
+    <a href="/"><Button>Shop</Button></a>
   </FeaturedProductCard>
 </div>
 
